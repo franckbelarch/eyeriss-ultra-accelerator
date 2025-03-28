@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Energy Efficiency and Performance Comparison</text>
+  
+  <!-- Chart Area -->
+  <rect x="80" y="80" width="660" height="340" fill="white" stroke="#cccccc" stroke-width="1" />
+  
+  <!-- Y-axis grid lines -->
+  <line x1="80" y1="140" x2="740" y2="140" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="200" x2="740" y2="200" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="260" x2="740" y2="260" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="320" x2="740" y2="320" stroke="#e6e6e6" stroke-width="1" />
+  
+  <!-- X and Y axes -->
+  <line x1="80" y1="380" x2="740" y2="380" stroke="#333333" stroke-width="2" />
+  <line x1="80" y1="80" x2="80" y2="380" stroke="#333333" stroke-width="2" />
+  
+  <!-- Y-axis labels (left - Energy Efficiency) -->
+  <text x="75" y="380" font-family="Arial" font-size="12" text-anchor="end">0</text>
+  <text x="75" y="320" font-family="Arial" font-size="12" text-anchor="end">2</text>
+  <text x="75" y="260" font-family="Arial" font-size="12" text-anchor="end">4</text>
+  <text x="75" y="200" font-family="Arial" font-size="12" text-anchor="end">6</text>
+  <text x="75" y="140" font-family="Arial" font-size="12" text-anchor="end">8</text>
+  <text x="75" y="80" font-family="Arial" font-size="12" text-anchor="end">10</text>
+  
+  <!-- Y-axis labels (right - Performance) -->
+  <text x="745" y="380" font-family="Arial" font-size="12" text-anchor="start">0</text>
+  <text x="745" y="320" font-family="Arial" font-size="12" text-anchor="start">1</text>
+  <text x="745" y="260" font-family="Arial" font-size="12" text-anchor="start">2</text>
+  <text x="745" y="200" font-family="Arial" font-size="12" text-anchor="start">3</text>
+  <text x="745" y="140" font-family="Arial" font-size="12" text-anchor="start">4</text>
+  <text x="745" y="80" font-family="Arial" font-size="12" text-anchor="start">5</text>
+  
+  <!-- Axis Titles -->
+  <text x="40" y="230" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 40, 230)">Energy Efficiency (TOPS/W)</text>
+  <text x="780" y="230" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(90, 780, 230)">Performance (TOPS)</text>
+  
+  <!-- Workload categories on X-axis -->
+  <text x="150" y="400" font-family="Arial" font-size="12" text-anchor="middle">CONV1</text>
+  <text x="280" y="400" font-family="Arial" font-size="12" text-anchor="middle">CONV3x3</text>
+  <text x="410" y="400" font-family="Arial" font-size="12" text-anchor="middle">Depthwise</text>
+  <text x="540" y="400" font-family="Arial" font-size="12" text-anchor="middle">Pointwise</text>
+  <text x="670" y="400" font-family="Arial" font-size="12" text-anchor="middle">Matrix Mult</text>
+  
+  <!-- X-axis label -->
+  <text x="410" y="430" font-family="Arial" font-size="14" text-anchor="middle">Workload Type</text>
+  
+  <!-- Bars for Eyeriss (Energy Efficiency) -->
+  <rect x="120" y="340" width="30" height="40" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <rect x="250" y="340" width="30" height="40" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <rect x="380" y="340" width="30" height="40" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <rect x="510" y="340" width="30" height="40" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <rect x="640" y="340" width="30" height="40" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  
+  <!-- Bars for Eyeriss Ultra (Energy Efficiency) -->
+  <rect x="150" y="183" width="30" height="197" fill="#70ad47" stroke="#333333" stroke-width="1" />
+  <rect x="280" y="161" width="30" height="219" fill="#70ad47" stroke="#333333" stroke-width="1" />
+  <rect x="410" y="129" width="30" height="251" fill="#70ad47" stroke="#333333" stroke-width="1" />
+  <rect x="540" y="175" width="30" height="205" fill="#70ad47" stroke="#333333" stroke-width="1" />
+  <rect x="670" y="196" width="30" height="184" fill="#70ad47" stroke="#333333" stroke-width="1" />
+  
+  <!-- Performance line for Eyeriss -->
+  <circle cx="135" cy="350" r="4" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="265" cy="350" r="4" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="395" cy="350" r="4" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="525" cy="350" r="4" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="655" cy="350" r="4" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  
+  <line x1="135" y1="350" x2="265" y2="350" stroke="#ed7d31" stroke-width="2" />
+  <line x1="265" y1="350" x2="395" y2="350" stroke="#ed7d31" stroke-width="2" />
+  <line x1="395" y1="350" x2="525" y2="350" stroke="#ed7d31" stroke-width="2" />
+  <line x1="525" y1="350" x2="655" y2="350" stroke="#ed7d31" stroke-width="2" />
+  
+  <!-- Performance line for Eyeriss Ultra -->
+  <circle cx="165" cy="275" r="4" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  <circle cx="295" cy="255" r="4" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  <circle cx="425" cy="225" r="4" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  <circle cx="555" cy="265" r="4" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  <circle cx="685" cy="245" r="4" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  
+  <line x1="165" y1="275" x2="295" y2="255" stroke="#ffc000" stroke-width="2" />
+  <line x1="295" y1="255" x2="425" y2="225" stroke="#ffc000" stroke-width="2" />
+  <line x1="425" y1="225" x2="555" y2="265" stroke="#ffc000" stroke-width="2" />
+  <line x1="555" y1="265" x2="685" y2="245" stroke="#ffc000" stroke-width="2" />
+  
+  <!-- Improvement factors -->
+  <text x="150" y="168" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">5.2×</text>
+  <text x="280" y="146" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">6.1×</text>
+  <text x="410" y="114" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">7.8×</text>
+  <text x="540" y="160" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">5.4×</text>
+  <text x="670" y="181" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">4.7×</text>
+  
+  <!-- Legend -->
+  <rect x="500" y="100" width="220" height="90" fill="white" stroke="#333333" stroke-width="1" rx="5" ry="5" />
+  
+  <!-- Legend items -->
+  <rect x="510" y="115" width="15" height="15" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <text x="535" y="127" font-family="Arial" font-size="12" text-anchor="start">Eyeriss Energy Efficiency</text>
+  
+  <rect x="510" y="140" width="15" height="15" fill="#70ad47" stroke="#333333" stroke-width="1" />
+  <text x="535" y="152" font-family="Arial" font-size="12" text-anchor="start">Eyeriss Ultra Energy Efficiency</text>
+  
+  <circle cx="517" cy="170" r="4" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <line x1="510" y1="170" x2="525" y2="170" stroke="#ed7d31" stroke-width="2" />
+  <text x="535" y="173" font-family="Arial" font-size="12" text-anchor="start">Eyeriss Performance</text>
+  
+  <circle cx="517" cy="190" r="4" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  <line x1="510" y1="190" x2="525" y2="190" stroke="#ffc000" stroke-width="2" />
+  <text x="535" y="193" font-family="Arial" font-size="12" text-anchor="start">Eyeriss Ultra Performance</text>
+</svg>

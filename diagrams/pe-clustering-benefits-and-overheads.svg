@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">PE Clustering Benefits and Overheads</text>
+  
+  <!-- Chart Area -->
+  <rect x="80" y="80" width="660" height="340" fill="white" stroke="#cccccc" stroke-width="1" />
+  
+  <!-- Y-axis grid lines -->
+  <line x1="80" y1="140" x2="740" y2="140" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="200" x2="740" y2="200" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="260" x2="740" y2="260" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="320" x2="740" y2="320" stroke="#e6e6e6" stroke-width="1" />
+  
+  <!-- X-axis grid lines -->
+  <line x1="212" y1="80" x2="212" y2="380" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="344" y1="80" x2="344" y2="380" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="476" y1="80" x2="476" y2="380" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="608" y1="80" x2="608" y2="380" stroke="#e6e6e6" stroke-width="1" />
+  
+  <!-- X and Y axes -->
+  <line x1="80" y1="380" x2="740" y2="380" stroke="#333333" stroke-width="2" />
+  <line x1="80" y1="80" x2="80" y2="380" stroke="#333333" stroke-width="2" />
+  
+  <!-- Y-axis labels (left - Weight Storage Reduction) -->
+  <text x="75" y="380" font-family="Arial" font-size="12" text-anchor="end">0%</text>
+  <text x="75" y="320" font-family="Arial" font-size="12" text-anchor="end">10%</text>
+  <text x="75" y="260" font-family="Arial" font-size="12" text-anchor="end">20%</text>
+  <text x="75" y="200" font-family="Arial" font-size="12" text-anchor="end">30%</text>
+  <text x="75" y="140" font-family="Arial" font-size="12" text-anchor="end">40%</text>
+  <text x="75" y="80" font-family="Arial" font-size="12" text-anchor="end">50%</text>
+  
+  <!-- Y-axis labels (right - Communication Overhead) -->
+  <text x="745" y="380" font-family="Arial" font-size="12" text-anchor="start">0%</text>
+  <text x="745" y="320" font-family="Arial" font-size="12" text-anchor="start">10%</text>
+  <text x="745" y="260" font-family="Arial" font-size="12" text-anchor="start">20%</text>
+  <text x="745" y="200" font-family="Arial" font-size="12" text-anchor="start">30%</text>
+  <text x="745" y="140" font-family="Arial" font-size="12" text-anchor="start">40%</text>
+  <text x="745" y="80" font-family="Arial" font-size="12" text-anchor="start">50%</text>
+  
+  <!-- Axis Titles -->
+  <text x="40" y="230" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 40, 230)">Weight Storage Reduction (%)</text>
+  <text x="780" y="230" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(90, 780, 230)">Communication Overhead (%)</text>
+  
+  <!-- Cluster sizes on X-axis -->
+  <text x="146" y="400" font-family="Arial" font-size="12" text-anchor="middle">1 PE</text>
+  <text x="278" y="400" font-family="Arial" font-size="12" text-anchor="middle">2 PEs</text>
+  <text x="410" y="400" font-family="Arial" font-size="12" text-anchor="middle">4 PEs</text>
+  <text x="542" y="400" font-family="Arial" font-size="12" text-anchor="middle">8 PEs</text>
+  <text x="674" y="400" font-family="Arial" font-size="12" text-anchor="middle">16 PEs</text>
+  
+  <!-- X-axis label -->
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle">Cluster Size</text>
+  
+  <!-- Weight Storage Reduction Line -->
+  <polyline points="146,380 278,320 410,260 542,140 674,100" fill="none" stroke="#4472c4" stroke-width="3" />
+  <circle cx="146" cy="380" r="5" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <circle cx="278" cy="320" r="5" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <circle cx="410" cy="260" r="5" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <circle cx="542" cy="140" r="5" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <circle cx="674" cy="100" r="5" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  
+  <!-- Communication Overhead Line -->
+  <polyline points="146,380 278,340 410,305 542,200 674,100" fill="none" stroke="#ed7d31" stroke-width="3" />
+  <circle cx="146" cy="380" r="5" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="278" cy="340" r="5" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="410" cy="305" r="5" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="542" cy="200" r="5" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <circle cx="674" cy="100" r="5" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  
+  <!-- Optimal Point Highlight -->
+  <circle cx="410" cy="282.5" r="25" fill="#70ad47" fill-opacity="0.3" stroke="#70ad47" stroke-width="2" />
+  <text x="410" y="282.5" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">✓</text>
+  
+  <!-- Value Labels -->
+  <text x="146" y="365" font-family="Arial" font-size="10" text-anchor="middle" fill="#4472c4" font-weight="bold">0%</text>
+  <text x="278" y="305" font-family="Arial" font-size="10" text-anchor="middle" fill="#4472c4" font-weight="bold">10%</text>
+  <text x="410" y="245" font-family="Arial" font-size="10" text-anchor="middle" fill="#4472c4" font-weight="bold">25%</text>
+  <text x="542" y="125" font-family="Arial" font-size="10" text-anchor="middle" fill="#4472c4" font-weight="bold">40%</text>
+  <text x="674" y="85" font-family="Arial" font-size="10" text-anchor="middle" fill="#4472c4" font-weight="bold">47%</text>
+  
+  <text x="146" y="365" font-family="Arial" font-size="10" text-anchor="middle" fill="#ed7d31" font-weight="bold" dx="0" dy="15">0%</text>
+  <text x="278" y="325" font-family="Arial" font-size="10" text-anchor="middle" fill="#ed7d31" font-weight="bold" dx="0" dy="15">7%</text>
+  <text x="410" y="290" font-family="Arial" font-size="10" text-anchor="middle" fill="#ed7d31" font-weight="bold" dx="0" dy="15">15%</text>
+  <text x="542" y="185" font-family="Arial" font-size="10" text-anchor="middle" fill="#ed7d31" font-weight="bold" dx="0" dy="15">30%</text>
+  <text x="674" y="85" font-family="Arial" font-size="10" text-anchor="middle" fill="#ed7d31" font-weight="bold" dx="0" dy="15">47%</text>
+  
+  <!-- Optimal Point Annotation -->
+  <text x="410" y="230" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Optimal Trade-off Point</text>
+  <text x="410" y="245" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">4 PEs per Cluster</text>
+  <text x="410" y="325" font-family="Arial" font-size="12" text-anchor="middle">(25% reduction, 15% overhead)</text>
+  
+  <!-- Legend -->
+  <rect x="520" y="90" width="200" height="70" fill="white" stroke="#333333" stroke-width="1" rx="5" ry="5" />
+  
+  <!-- Legend items -->
+  <line x1="530" y1="110" x2="560" y2="110" stroke="#4472c4" stroke-width="3" />
+  <circle cx="545" cy="110" r="5" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <text x="570" y="115" font-family="Arial" font-size="12" text-anchor="start">Weight Storage Reduction</text>
+  
+  <line x1="530" y1="140" x2="560" y2="140" stroke="#ed7d31" stroke-width="3" />
+  <circle cx="545" cy="140" r="5" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <text x="570" y="145" font-family="Arial" font-size="12" text-anchor="start">Communication Overhead</text>
+</svg>

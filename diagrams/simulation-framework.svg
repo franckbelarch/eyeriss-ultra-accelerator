@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Simulation Framework</text>
+  
+  <!-- Flow diagram -->
+  <!-- Input section -->
+  <rect x="50" y="80" width="200" height="80" fill="#cfe2ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="150" y="120" font-family="Arial" font-size="16" text-anchor="middle">Architecture Specification</text>
+  <text x="150" y="140" font-family="Arial" font-size="12" text-anchor="middle">(YAML format)</text>
+  
+  <rect x="50" y="180" width="200" height="80" fill="#cfe2ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="150" y="220" font-family="Arial" font-size="16" text-anchor="middle">Workload Definition</text>
+  <text x="150" y="240" font-family="Arial" font-size="12" text-anchor="middle">(Layer specifications)</text>
+  
+  <!-- Core Framework -->
+  <rect x="300" y="130" width="200" height="180" fill="#fff2cc" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="150" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Timeloop Base</text>
+  
+  <rect x="320" y="170" width="160" height="40" fill="#ffe699" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="400" y="195" font-family="Arial" font-size="14" text-anchor="middle">Mapping Explorer</text>
+  
+  <rect x="320" y="220" width="160" height="40" fill="#ffe699" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="400" y="245" font-family="Arial" font-size="14" text-anchor="middle">Cost Model</text>
+  
+  <rect x="320" y="270" width="160" height="25" fill="#ffe699" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="400" y="287" font-family="Arial" font-size="12" text-anchor="middle">Memory Hierarchy Simulator</text>
+  
+  <!-- Custom Extensions -->
+  <rect x="300" y="330" width="200" height="150" fill="#d9d9ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Custom Extensions</text>
+  
+  <rect x="320" y="370" width="160" height="30" fill="#d4b4ff" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="400" y="390" font-family="Arial" font-size="12" text-anchor="middle">Sparsity Model</text>
+  
+  <rect x="320" y="410" width="160" height="30" fill="#d4b4ff" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="400" y="430" font-family="Arial" font-size="12" text-anchor="middle">Mixed-Precision Model</text>
+  
+  <rect x="320" y="450" width="76" height="20" fill="#d4b4ff" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="358" y="465" font-family="Arial" font-size="10" text-anchor="middle">PE Clustering</text>
+  
+  <rect x="404" y="450" width="76" height="20" fill="#d4b4ff" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="442" y="465" font-family="Arial" font-size="10" text-anchor="middle">Tech Scaling</text>
+  
+  <!-- Output and Analysis -->
+  <rect x="550" y="80" width="200" height="130" fill="#d1e7dd" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="650" y="100" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Analysis</text>
+  
+  <rect x="570" y="115" width="160" height="25" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="132" font-family="Arial" font-size="12" text-anchor="middle">Energy Evaluation</text>
+  
+  <rect x="570" y="150" width="160" height="25" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="167" font-family="Arial" font-size="12" text-anchor="middle">Performance Model</text>
+  
+  <rect x="570" y="185" width="160" height="25" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="202" font-family="Arial" font-size="12" text-anchor="middle">Area Estimation</text>
+  
+  <!-- Visualization Output -->
+  <rect x="550" y="230" width="200" height="120" fill="#ffcccc" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="650" y="250" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Visualization</text>
+  
+  <rect x="570" y="265" width="160" height="25" fill="#ff9999" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="282" font-family="Arial" font-size="12" text-anchor="middle">Energy Breakdown</text>
+  
+  <rect x="570" y="300" width="160" height="25" fill="#ff9999" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="317" font-family="Arial" font-size="12" text-anchor="middle">Utilization Maps</text>
+  
+  <rect x="570" y="335" width="160" height="15" fill="#ff9999" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="347" font-family="Arial" font-size="10" text-anchor="middle">Comparison Reports</text>
+  
+  <!-- Deployment Analysis -->
+  <rect x="550" y="370" width="200" height="110" fill="#e2c8ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="650" y="390" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Hardware Analysis</text>
+  
+  <rect x="570" y="405" width="160" height="25" fill="#d4b4ff" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="422" font-family="Arial" font-size="12" text-anchor="middle">Power/Performance Trade-offs</text>
+  
+  <rect x="570" y="440" width="160" height="25" fill="#d4b4ff" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="650" y="457" font-family="Arial" font-size="12" text-anchor="middle">Accelerator Comparison</text>
+  
+  <!-- Connection Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Input to Core -->
+  <line x1="250" y1="120" x2="300" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="250" y1="220" x2="300" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Core to Extensions -->
+  <line x1="400" y1="310" x2="400" y2="330" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Core to Analysis -->
+  <line x1="500" y1="220" x2="550" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Extensions to Analysis -->
+  <line x1="500" y1="400" x2="550" y2="400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Analysis to Visualization -->
+  <line x1="650" y1="210" x2="650" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Visualization to Deployment -->
+  <line x1="650" y1="350" x2="650" y2="370" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Configuration Flow Label -->
+  <text x="265" y="105" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Configuration</text>
+  
+  <!-- Simulation Flow Label -->
+  <text x="345" y="330" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Model</text>
+  <text x="345" y="343" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Extension</text>
+  
+  <!-- Results Flow Label -->
+  <text x="520" y="190" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Results</text>
+  <text x="520" y="400" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Advanced</text>
+  <text x="520" y="413" font-family="Arial" font-size="10" text-anchor="middle" font-style="italic">Metrics</text>
+</svg>

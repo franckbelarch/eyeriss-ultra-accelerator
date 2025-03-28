@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Mixed-Precision Arithmetic Unit</text>
+  
+  <!-- Input Data Paths -->
+  <rect x="50" y="80" width="700" height="60" fill="#e2f0d9" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <line x1="200" y1="140" x2="200" y2="180" stroke="#333" stroke-width="2" />
+  <line x1="400" y1="140" x2="400" y2="180" stroke="#333" stroke-width="2" />
+  <line x1="600" y1="140" x2="600" y2="180" stroke="#333" stroke-width="2" />
+  
+  <!-- Input Labels -->
+  <text x="200" y="110" font-family="Arial" font-size="16" text-anchor="middle">INT4 Inputs</text>
+  <text x="400" y="110" font-family="Arial" font-size="16" text-anchor="middle">INT8 Inputs</text>
+  <text x="600" y="110" font-family="Arial" font-size="16" text-anchor="middle">FP16 Inputs</text>
+  
+  <!-- Precision Dispatch Controller -->
+  <rect x="100" y="180" width="600" height="60" fill="#cfe2ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="215" font-family="Arial" font-size="16" text-anchor="middle">Precision Dispatch Controller</text>
+  
+  <!-- Multiplier Array -->
+  <rect x="100" y="280" width="600" height="120" fill="#fff2cc" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="300" font-family="Arial" font-size="16" text-anchor="middle">Configurable Multiplier Array</text>
+  
+  <!-- Multiplier Divisions -->
+  <!-- INT4 Multipliers -->
+  <rect x="120" y="320" width="160" height="60" fill="#ffe699" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="200" y="350" font-family="Arial" font-size="14" text-anchor="middle">4×4-bit Multipliers</text>
+  <text x="200" y="370" font-family="Arial" font-size="12" text-anchor="middle">(4 units)</text>
+  
+  <!-- INT8 Multipliers -->
+  <rect x="320" y="320" width="160" height="60" fill="#ffe699" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="400" y="350" font-family="Arial" font-size="14" text-anchor="middle">8×8-bit Multipliers</text>
+  <text x="400" y="370" font-family="Arial" font-size="12" text-anchor="middle">(2 units)</text>
+  
+  <!-- FP16 Multipliers -->
+  <rect x="520" y="320" width="160" height="60" fill="#ffe699" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="600" y="350" font-family="Arial" font-size="14" text-anchor="middle">FP16 Multiplier</text>
+  <text x="600" y="370" font-family="Arial" font-size="12" text-anchor="middle">(1 unit)</text>
+  
+  <!-- Accumulation Logic -->
+  <rect x="100" y="440" width="600" height="80" fill="#d9d9ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="460" font-family="Arial" font-size="16" text-anchor="middle">Precision-Specific Accumulation Logic</text>
+  
+  <!-- Accumulator Divisions -->
+  <rect x="120" y="480" width="160" height="30" fill="#c5c6f4" stroke="#333" stroke-width="1" rx="2" ry="2" />
+  <text x="200" y="500" font-family="Arial" font-size="12" text-anchor="middle">INT4 Accumulators</text>
+  
+  <rect x="320" y="480" width="160" height="30" fill="#c5c6f4" stroke="#333" stroke-width="1" rx="2" ry="2" />
+  <text x="400" y="500" font-family="Arial" font-size="12" text-anchor="middle">INT8 Accumulators</text>
+  
+  <rect x="520" y="480" width="160" height="30" fill="#c5c6f4" stroke="#333" stroke-width="1" rx="2" ry="2" />
+  <text x="600" y="500" font-family="Arial" font-size="12" text-anchor="middle">FP16 Accumulator</text>
+  
+  <!-- Output -->
+  <rect x="100" y="540" width="600" height="40" fill="#ffcccc" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="565" font-family="Arial" font-size="16" text-anchor="middle">Output (Configurable Precision)</text>
+  
+  <!-- Power Gating -->
+  <rect x="700" y="280" width="80" height="240" fill="#e2c8ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="740" y="400" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(90, 740, 400)">Power Gating Control</text>
+  
+  <!-- Connecting Lines -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Controller to Multipliers -->
+  <line x1="200" y1="240" x2="200" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="240" x2="400" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="600" y1="240" x2="600" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Multipliers to Accumulators -->
+  <line x1="200" y1="400" x2="200" y2="440" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="400" x2="400" y2="440" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="600" y1="400" x2="600" y2="440" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Accumulators to Output -->
+  <line x1="400" y1="520" x2="400" y2="540" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Power Gating Connections -->
+  <line x1="700" y1="330" x2="680" y2="330" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" />
+  <line x1="700" y1="400" x2="680" y2="400" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" />
+  <line x1="700" y1="470" x2="680" y2="470" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" />
+</svg>

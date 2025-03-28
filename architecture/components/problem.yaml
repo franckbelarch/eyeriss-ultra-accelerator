@@ -1,0 +1,57 @@
+problem:
+  # ============================================================
+  # Problem Description - ResNet-50 with Variable Sparsity
+  # ============================================================
+  
+  instance:
+    # Conv layer dimensions (ResNet-50 typical)
+    C: 256  # Input channels
+    M: 256  # Output channels
+    R: 3    # Filter height
+    S: 3    # Filter width
+    P: 56   # Output height
+    Q: 56   # Output width
+    N: 1    # Batch size
+    
+    # Sparsity characteristics
+    weight_sparsity: 0.7  # 70% of weights are zero
+    input_sparsity: 0.5   # 50% of activations are zero after ReLU
+    
+    # Data precision specifications
+    datatype: int8       # Base datatype
+    weight_precision: 4  # Can use 4-bit weights
+    input_precision: 8   # Inputs use 8-bit precision
+    output_precision: 32 # Outputs/partial sums use 32-bit precision
+    
+  shape:
+    data-spaces:
+    - name: Weights
+      projection:
+      - [ [C] ]
+      - [ [M] ]
+      - [ [R] ]
+      - [ [S] ]
+    - name: Inputs
+      projection:
+      - [ [N] ]
+      - [ [C] ]
+      - [ [P, R] ]
+      - [ [Q, S] ]
+    - name: Outputs
+      projection:
+      - [ [N] ]
+      - [ [M] ]
+      - [ [P] ]
+      - [ [Q] ]
+      
+    dimensions:
+    - R = 3
+    - S = 3
+    - P = 56
+    - Q = 56
+    - C = 256
+    - M = 256
+    - N = 1
+    
+    constraints:
+    - spatial: true

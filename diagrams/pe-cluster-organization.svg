@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <!-- Background -->
+  <rect width="700" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="350" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">PE Cluster Organization</text>
+  
+  <!-- Cluster Boundary -->
+  <rect x="100" y="70" width="500" height="340" fill="#fff2cc" stroke="#333" stroke-width="3" rx="10" ry="10" />
+  <text x="350" y="95" font-family="Arial" font-size="18" text-anchor="middle">PE Cluster</text>
+  
+  <!-- Shared Weight Buffer -->
+  <rect x="150" y="110" width="400" height="60" fill="#cfe2ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="350" y="145" font-family="Arial" font-size="16" text-anchor="middle">Shared Weight Buffer</text>
+  
+  <!-- Processing Elements -->
+  <!-- PE 1 -->
+  <rect x="150" y="190" width="180" height="180" fill="#d1e7dd" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="240" y="210" font-family="Arial" font-size="16" text-anchor="middle">PE 1</text>
+  
+  <!-- PE 1 Components -->
+  <rect x="170" y="220" width="140" height="40" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="240" y="245" font-family="Arial" font-size="12" text-anchor="middle">Activation Registers</text>
+  
+  <rect x="170" y="270" width="140" height="40" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="240" y="295" font-family="Arial" font-size="12" text-anchor="middle">Mixed-Precision MAC</text>
+  
+  <rect x="170" y="320" width="140" height="40" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="240" y="345" font-family="Arial" font-size="12" text-anchor="middle">Zero-Detection Logic</text>
+  
+  <!-- PE 2 -->
+  <rect x="370" y="190" width="180" height="180" fill="#d1e7dd" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="460" y="210" font-family="Arial" font-size="16" text-anchor="middle">PE 2</text>
+  
+  <!-- PE 2 Components -->
+  <rect x="390" y="220" width="140" height="40" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="460" y="245" font-family="Arial" font-size="12" text-anchor="middle">Activation Registers</text>
+  
+  <rect x="390" y="270" width="140" height="40" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="460" y="295" font-family="Arial" font-size="12" text-anchor="middle">Mixed-Precision MAC</text>
+  
+  <rect x="390" y="320" width="140" height="40" fill="#c3e6cb" stroke="#333" stroke-width="1" rx="3" ry="3" />
+  <text x="460" y="345" font-family="Arial" font-size="12" text-anchor="middle">Zero-Detection Logic</text>
+  
+  <!-- PE 3 & 4 Indicator -->
+  <text x="350" y="390" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">(PE 3 and PE 4 not shown - identical to PE 1 and PE 2)</text>
+  
+  <!-- Interface Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Connecting Arrows -->
+  <!-- Weight Buffer to PEs -->
+  <line x1="240" y1="170" x2="240" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="460" y1="170" x2="460" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- PE to PE Communication -->
+  <line x1="330" y1="280" x2="370" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- External Interface -->
+  <rect x="50" y="430" width="600" height="50" fill="#d9d9ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="350" y="460" font-family="Arial" font-size="16" text-anchor="middle">Interface to Cluster Buffer and Network-on-Chip</text>
+  
+  <!-- Connecting to External Interface -->
+  <line x1="350" y1="410" x2="350" y2="430" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+</svg>

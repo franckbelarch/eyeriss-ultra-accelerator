@@ -1,0 +1,166 @@
+architecture:
+  # ============================================================
+  # Architecture Description - Ultra-Optimized Eyeriss (Eyeriss Ultra)
+  # ============================================================
+  version: 0.4
+  nodes: # Top-level is hierarchical
+  - !Container # Top-level system
+    name: system
+  
+  - !Component # DRAM main memory
+    name: DRAM
+    class: DRAM
+    attributes:
+      type: "LPDDR5"  # Latest LPDDR standard for higher bandwidth
+      width: 64
+      datawidth: 8
+      bandwidth: 51.2  # GB/s
+      latency: 80  # ns
+
+  - !Container # Eyeriss Ultra accelerator
+    name: eyeriss_ultra
+    attributes:
+      technology: "7nm"  # Advanced technology node for better power efficiency
+
+  - !Parallel # Multi-level memory hierarchy with sparsity support
+    nodes:
+    - !Component # Global buffer for inputs with compression support
+      name: input_glb
+      class: smartbuffer_SRAM
+      attributes:
+        depth: 32768  # 2x larger than original optimized design
+        width: 128
+        n_banks: 64
+        datawidth: 8
+        read_bandwidth: 64  # Higher read bandwidth
+        write_bandwidth: 64
+        multiple_buffering: 2.0  # Double buffering
+        sparsity_supported: true
+        compression_ratio: 2.0  # 2:1 compression for activations
+      constraints:
+        dataspace: {keep: [Inputs], bypass: [Weights, Outputs]}
+        
+    - !Component # Global buffer for weights with compression support
+      name: weight_glb
+      class: smartbuffer_SRAM
+      attributes:
+        depth: 65536  # 2x larger for more kernel storage
+        width: 128
+        n_banks: 64
+        datawidth: 8
+        read_bandwidth: 64
+        write_bandwidth: 64
+        sparsity_supported: true
+        compression_ratio: 3.0  # 3:1 compression for weights
+      constraints:
+        dataspace: {keep: [Weights], bypass: [Inputs, Outputs]}
+        
+    - !Component # Global buffer for outputs with precision support
+      name: output_glb
+      class: smartbuffer_SRAM
+      attributes:
+        depth: 32768
+        width: 128
+        n_banks: 64
+        datawidth: 32  # Wider datawidth for high precision accumulation
+        read_bandwidth: 64
+        write_bandwidth: 64
+        multiple_buffering: 2.0  # Double buffering
+      constraints:
+        dataspace: {keep: [Outputs], bypass: [Inputs, Weights]}
+
+  - !Container # PE array cluster organization
+    name: PE_clusters
+    spatial: {cluster: 4}  # Divides the PE array into 4 clusters for better utilization
+    constraints:
+      spatial:
+        permutation: [N, C, P, Q, M]
+        factors: [N=1, C=1, P=1, Q=1]
+        split: 5
+
+  - !Container # Each column of PEs produces a different psum row
+    name: PE_column
+    spatial: {meshX: 32}  # 2x larger spatial array for more parallelism
+    constraints:
+      spatial:
+        permutation: [N, C, P, R, S, Q, M]
+        factors: [N=1, C=1, P=1, R=1, S=1]
+        split: 7
+
+  - !Container # Each PE in the column receives a different filter row
+    name: PE
+    spatial: {meshY: 32}  # 2x larger spatial array for more parallelism
+    power_gating: true  # Support power gating for unused PEs
+    constraints:
+      spatial:
+        split: 4
+        permutation: [N, P, Q, R, S, C, M]
+        factors: [N=1, P=1, Q=1, R=1]
+
+  - !Parallel # Input/Output/Weight scratchpads in parallel
+    nodes:
+    - !Component # Input scratchpad with sparsity support
+      name: ifmap_spad
+      class: smartbuffer_RF
+      attributes:
+        depth: 64  # 2x larger buffer
+        width: 32
+        datawidth: 8
+        read_bandwidth: 8  # Increased bandwidth
+        write_bandwidth: 8
+        update_fifo_depth: 4  # Deeper FIFO
+        multiple_buffering: 2.0  # Double buffering
+        sparsity_supported: true
+      constraints:
+        dataspace: {keep: [Inputs]}
+        temporal:
+          permutation: [N, M, C, P, Q, R, S]
+          factors: [N=1, M=1, C=1, P=1, Q=1, R=1, S=1]
+
+    - !Component # Weight scratchpad with sparsity support
+      name: weights_spad
+      class: smartbuffer_RF
+      attributes:
+        depth: 512  # 2x larger buffer
+        width: 32
+        datawidth: 8
+        read_bandwidth: 8  # Increased bandwidth
+        write_bandwidth: 8
+        update_fifo_depth: 4  # Deeper FIFO
+        multiple_buffering: 2.0  # Double buffering
+        sparsity_supported: true
+      constraints:
+        dataspace: {keep: [Weights]}
+        temporal:
+          permutation: [N, M, P, Q, S, C, R]  # Optimized for weight reuse
+          factors: [N=1, M=1, P=1, Q=1, S=1]
+
+    - !Component # Output scratchpad with precision support
+      name: psum_spad
+      class: smartbuffer_RF
+      attributes:
+        depth: 64  # 2x larger buffer
+        width: 32
+        update_fifo_depth: 8  # Increased FIFO depth
+        datawidth: 32  # Higher precision for accumulation
+        read_bandwidth: 8  # Increased bandwidth
+        write_bandwidth: 8
+        multiple_buffering: 2.0  # Double buffering
+      constraints:
+        dataspace: {keep: [Outputs]}
+        temporal:
+          permutation: [N, C, P, Q, R, S, M] 
+          factors: [N=1, C=1, R=1, S=1, P=1, Q=1]
+
+  - !Component # MAC unit with mixed precision and sparsity support
+    name: mac
+    class: intmac
+    attributes:
+      precision: "mixed"  # Support for different precisions
+      datawidth_weights: [4, 8]  # Support for 4-bit and 8-bit weights
+      datawidth_activations: [4, 8]  # Support for 4-bit and 8-bit activations
+      datawidth_accumulator: 32  # Higher precision accumulator
+      sparsity_gating: true  # Skip computations with zeros
+      clock_gating: true  # Clock gating to save power
+      multiplier_width: 8
+      adder_width: 32  # Wider accumulator for better precision

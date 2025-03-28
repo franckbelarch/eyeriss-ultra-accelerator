@@ -1,0 +1,84 @@
+mapper:
+  # ============================================================
+  # Advanced Mapper Configuration for Eyeriss Ultra
+  # ============================================================
+  
+  # Optimization target - balance energy and performance
+  optimization-metrics:
+    - name: energy
+      weight: 0.7
+    - name: delay
+      weight: 0.3
+  
+  # Search algorithm configuration
+  search:
+    algorithm: hybrid  # Hybrid genetic + simulated annealing
+    max-steps: 10000   # Maximum number of steps
+    max-time: 7200     # Maximum time (seconds)
+    
+    genetic:
+      population-size: 100
+      mutation-rate: 0.3
+      crossover-rate: 0.7
+      elitism: 5
+      
+    annealing:
+      init-temp: 100
+      cooling-rate: 0.98
+    
+    pruning:
+      type: aggressive
+      buffer-size-threshold: 500  # Prune mappings that exceed buffer capacity
+      
+  # Timeloop mapper precision
+  precision:
+    LRU-tile-size: 128
+    computation-skip-threshold: 1e-6
+    utilization-skip-threshold: 0.01
+    
+  # Runtime permutations to explore 
+  permutation:
+    use-smartbuffers-for-bypass: true
+    explorations-per-level: 5
+    ignore-spatial-permutations: false
+    filter-spatial-fanout: true
+    
+  # Sparse optimization configuration
+  sparse-optimizations:
+    representations:
+      Weights:
+        format: CSR  # Compressed Sparse Row format
+        metadata-word-bits: 8
+        action-optimization: true
+      Inputs:
+        format: CSC  # Compressed Sparse Column format
+        metadata-word-bits: 8
+        action-optimization: true
+        
+    compute-optimization:
+      gating: true   # Skip multiplications with zeros
+      banking: true  # Bank memories for parallel access
+    
+  # Mixed precision support
+  precision-optimizations:
+    weights:
+      bits: 4
+      quantization: symmetric
+    activations:
+      bits: 8
+      quantization: asymmetric
+    accumulation:
+      bits: 32
+      rounding: truncate
+      
+  # Visualize results
+  visualization:
+    compute-visualization: true
+    compute-visualization-timeloop: true
+    
+  # Output options
+  output:
+    detailed-report: true
+    include-energy-breakdown: true
+    include-utilization-breakdown: true
+    metric-table: true

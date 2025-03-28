@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Mixed-Precision Energy Benefits</text>
+  
+  <!-- Chart Area -->
+  <rect x="80" y="80" width="660" height="340" fill="white" stroke="#cccccc" stroke-width="1" />
+  
+  <!-- Y-axis grid lines (logarithmic scale) -->
+  <line x1="80" y1="380" x2="740" y2="380" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="323" x2="740" y2="323" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="266" x2="740" y2="266" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="209" x2="740" y2="209" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="152" x2="740" y2="152" stroke="#e6e6e6" stroke-width="1" />
+  <line x1="80" y1="95" x2="740" y2="95" stroke="#e6e6e6" stroke-width="1" />
+  
+  <!-- X and Y axes -->
+  <line x1="80" y1="380" x2="740" y2="380" stroke="#333333" stroke-width="2" />
+  <line x1="80" y1="80" x2="80" y2="380" stroke="#333333" stroke-width="2" />
+  
+  <!-- Y-axis labels -->
+  <text x="75" y="380" font-family="Arial" font-size="12" text-anchor="end">0</text>
+  <text x="75" y="323" font-family="Arial" font-size="12" text-anchor="end">2</text>
+  <text x="75" y="266" font-family="Arial" font-size="12" text-anchor="end">4</text>
+  <text x="75" y="209" font-family="Arial" font-size="12" text-anchor="end">6</text>
+  <text x="75" y="152" font-family="Arial" font-size="12" text-anchor="end">8</text>
+  <text x="75" y="95" font-family="Arial" font-size="12" text-anchor="end">10</text>
+  
+  <!-- Axis Titles -->
+  <text x="40" y="230" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 40, 230)">Energy per Operation (pJ)</text>
+  
+  <!-- Operation categories on X-axis -->
+  <text x="145" y="400" font-family="Arial" font-size="12" text-anchor="middle">MULT</text>
+  <text x="265" y="400" font-family="Arial" font-size="12" text-anchor="middle">ADD</text>
+  <text x="385" y="400" font-family="Arial" font-size="12" text-anchor="middle">MACC</text>
+  <text x="505" y="400" font-family="Arial" font-size="12" text-anchor="middle">LOAD</text>
+  <text x="625" y="400" font-family="Arial" font-size="12" text-anchor="middle">STORE</text>
+  
+  <!-- X-axis label -->
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle">Operation Type</text>
+  
+  <!-- Group 1: MULT -->
+  <!-- FP32 -->
+  <rect x="100" y="95" width="20" height="285" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <!-- FP16 -->
+  <rect x="120" y="209" width="20" height="171" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <!-- INT8 -->
+  <rect x="140" y="266" width="20" height="114" fill="#a5a5a5" stroke="#333333" stroke-width="1" />
+  <!-- INT4 -->
+  <rect x="160" y="360" width="20" height="20" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  
+  <!-- Group 2: ADD -->
+  <!-- FP32 -->
+  <rect x="220" y="152" width="20" height="228" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <!-- FP16 -->
+  <rect x="240" y="245" width="20" height="135" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <!-- INT8 -->
+  <rect x="260" y="285" width="20" height="95" fill="#a5a5a5" stroke="#333333" stroke-width="1" />
+  <!-- INT4 -->
+  <rect x="280" y="365" width="20" height="15" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  
+  <!-- Group 3: MACC -->
+  <!-- FP32 -->
+  <rect x="340" y="95" width="20" height="285" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <!-- FP16 -->
+  <rect x="360" y="209" width="20" height="171" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <!-- INT8 -->
+  <rect x="380" y="266" width="20" height="114" fill="#a5a5a5" stroke="#333333" stroke-width="1" />
+  <!-- INT4 -->
+  <rect x="400" y="360" width="20" height="20" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  
+  <!-- Group 4: LOAD -->
+  <!-- FP32 -->
+  <rect x="460" y="180" width="20" height="200" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <!-- FP16 -->
+  <rect x="480" y="240" width="20" height="140" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <!-- INT8 -->
+  <rect x="500" y="300" width="20" height="80" fill="#a5a5a5" stroke="#333333" stroke-width="1" />
+  <!-- INT4 -->
+  <rect x="520" y="340" width="20" height="40" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  
+  <!-- Group 5: STORE -->
+  <!-- FP32 -->
+  <rect x="580" y="180" width="20" height="200" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <!-- FP16 -->
+  <rect x="600" y="240" width="20" height="140" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <!-- INT8 -->
+  <rect x="620" y="300" width="20" height="80" fill="#a5a5a5" stroke="#333333" stroke-width="1" />
+  <!-- INT4 -->
+  <rect x="640" y="340" width="20" height="40" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  
+  <!-- Reduction percentages -->
+  <text x="130" y="194" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-75%</text>
+  <text x="150" y="251" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-60%</text>
+  <text x="170" y="345" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-94%</text>
+  
+  <text x="250" y="230" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-70%</text>
+  <text x="270" y="270" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-58%</text>
+  <text x="290" y="350" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-93%</text>
+  
+  <text x="370" y="194" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-75%</text>
+  <text x="390" y="251" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-60%</text>
+  <text x="410" y="345" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-94%</text>
+  
+  <text x="490" y="225" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-50%</text>
+  <text x="510" y="285" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-60%</text>
+  <text x="530" y="325" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-80%</text>
+  
+  <text x="610" y="225" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-50%</text>
+  <text x="630" y="285" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-60%</text>
+  <text x="650" y="325" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">-80%</text>
+  
+  <!-- Legend -->
+  <rect x="560" y="100" width="160" height="110" fill="white" stroke="#333333" stroke-width="1" rx="5" ry="5" />
+  
+  <!-- Legend items -->
+  <rect x="570" y="115" width="15" height="15" fill="#4472c4" stroke="#333333" stroke-width="1" />
+  <text x="595" y="127" font-family="Arial" font-size="12" text-anchor="start">FP32</text>
+  
+  <rect x="570" y="140" width="15" height="15" fill="#ed7d31" stroke="#333333" stroke-width="1" />
+  <text x="595" y="152" font-family="Arial" font-size="12" text-anchor="start">FP16</text>
+  
+  <rect x="570" y="165" width="15" height="15" fill="#a5a5a5" stroke="#333333" stroke-width="1" />
+  <text x="595" y="177" font-family="Arial" font-size="12" text-anchor="start">INT8</text>
+  
+  <rect x="570" y="190" width="15" height="15" fill="#ffc000" stroke="#333333" stroke-width="1" />
+  <text x="595" y="202" font-family="Arial" font-size="12" text-anchor="start">INT4</text>
+</svg>

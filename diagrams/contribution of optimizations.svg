@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Contribution of Optimizations</text>
+  
+  <!-- Chart Labels -->
+  <text x="200" y="80" font-family="Arial" font-size="18" text-anchor="middle">Energy Savings</text>
+  <text x="600" y="80" font-family="Arial" font-size="18" text-anchor="middle">Latency Improvement</text>
+  
+  <!-- Energy Savings Pie Chart (Left) -->
+  <g transform="translate(200, 230)">
+    <!-- Invisible full circle for reference -->
+    <circle cx="0" cy="0" r="120" fill="none" />
+    
+    <!-- Initial position marker at 12 o'clock -->
+    <circle cx="0" cy="-120" r="2" fill="#000" />
+    
+    <!-- Sparsity Slice (42% = 151.2 degrees) -->
+    <path d="M 0 0 L 0 -120 A 120 120 0 0 1 113.45 38.42 Z" fill="#4472c4" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Mixed Precision Slice (23% = 82.8 degrees) -->
+    <path d="M 0 0 L 113.45 38.42 A 120 120 0 0 1 -28.21 116.68 Z" fill="#ed7d31" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Technology Scaling Slice (21% = 75.6 degrees) -->
+    <path d="M 0 0 L -28.21 116.68 A 120 120 0 0 1 -113.14 -39.38 Z" fill="#a5a5a5" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- PE Clustering Slice (14% = 50.4 degrees) -->
+    <path d="M 0 0 L -113.14 -39.38 A 120 120 0 0 1 0 -120 Z" fill="#ffc000" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Center Circle (aesthetic) -->
+    <circle cx="0" cy="0" r="40" fill="white" stroke="#333" stroke-width="1" />
+  </g>
+  
+  <!-- Latency Improvement Pie Chart (Right) -->
+  <g transform="translate(600, 230)">
+    <!-- Invisible full circle for reference -->
+    <circle cx="0" cy="0" r="120" fill="none" />
+    
+    <!-- Initial position marker at 12 o'clock -->
+    <circle cx="0" cy="-120" r="2" fill="#000" />
+    
+    <!-- Sparsity Slice (51% = 183.6 degrees) -->
+    <path d="M 0 0 L 0 -120 A 120 120 0 0 1 74.56 94.03 Z" fill="#4472c4" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Technology Scaling Slice (25% = 90 degrees) -->
+    <path d="M 0 0 L 74.56 94.03 A 120 120 0 0 1 -120 0 Z" fill="#a5a5a5" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- PE Clustering Slice (24% = 86.4 degrees) -->
+    <path d="M 0 0 L -120 0 A 120 120 0 0 1 0 -120 Z" fill="#ffc000" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Center Circle (aesthetic) -->
+    <circle cx="0" cy="0" r="40" fill="white" stroke="#333" stroke-width="1" />
+  </g>
+  
+  <!-- Note about Mixed Precision - Moved further down to avoid overlap -->
+  <rect x="490" y="365" width="220" height="55" fill="white" stroke="#333" stroke-width="1" rx="5" ry="5" opacity="0.9" />
+  <text x="600" y="390" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Mixed Precision: 0% contribution</text>
+  <text x="600" y="410" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">to latency (energy savings only)</text>
+  
+  <!-- Legend - Moved slightly up to avoid overlap with the new note position -->
+  <rect x="180" y="350" width="290" height="120" fill="white" stroke="#333" stroke-width="1" rx="5" ry="5" />
+  <text x="325" y="370" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend Sparsity -->
+  <rect x="190" y="385" width="20" height="15" fill="#4472c4" />
+  <text x="220" y="397" font-family="Arial" font-size="14" text-anchor="start">Sparsity Exploitation (42%/51%)</text>
+  
+  <!-- Legend Mixed Precision -->
+  <rect x="190" y="410" width="20" height="15" fill="#ed7d31" />
+  <text x="220" y="422" font-family="Arial" font-size="14" text-anchor="start">Mixed Precision (23%/0%)</text>
+  
+  <!-- Legend PE Clustering -->
+  <rect x="190" y="435" width="20" height="15" fill="#ffc000" />
+  <text x="220" y="447" font-family="Arial" font-size="14" text-anchor="start">PE Clustering (14%/24%)</text>
+  
+  <!-- Legend Technology Scaling -->
+  <rect x="190" y="460" width="20" height="15" fill="#a5a5a5" />
+  <text x="220" y="472" font-family="Arial" font-size="14" text-anchor="start">Technology Scaling (21%/25%)</text>
+  
+  <!-- Labels on Energy Pie - Fixed the Mixed Precision label position -->
+  <!-- Sparsity: 42% (0° to 151.2°) => midpoint at 75.6° -->
+  <text x="245" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">42%</text>
+  
+  <!-- Mixed Precision: 23% (151.2° to 234°) => midpoint at 192.6° - CORRECTED -->
+  <text x="230" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">23%</text>
+  
+  <!-- Technology Scaling: 21% (234° to 309.6°) => midpoint at 271.8° -->
+  <text x="120" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">21%</text>
+  
+  <!-- PE Clustering: 14% (309.6° to 360°) => midpoint at 334.8° -->
+  <text x="150" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">14%</text>
+  
+  <!-- Labels on Latency Pie -->
+  <!-- Sparsity: 51% (0° to 183.6°) => midpoint at 91.8° -->
+  <text x="645" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">51%</text>
+  
+  <!-- Technology Scaling: 25% (183.6° to 273.6°) => midpoint at 228.6° -->
+  <text x="575" y="300" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">25%</text>
+  
+  <!-- PE Clustering: 24% (273.6° to 360°) => midpoint at 316.8° -->
+  <text x="550" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">24%</text>
+</svg>

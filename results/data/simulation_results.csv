@@ -1,0 +1,7 @@
+architecture,energy_pj_compute,utilization,cycles,area_mm2
+eyeriss_optimized,6.17,0.25,168560.0,0.88
+eyeriss_like,6.63,0.25,172032.0,0.85
+simple_output_stationary,11.03,0.06,185000.0,0.67
+simple_weight_stationary,14.18,0.05,192000.0,0.65
+simba_like,30.16,0.19,210000.0,1.20
+eyeriss_ultra,1.0,0.55,40000.0,0.70

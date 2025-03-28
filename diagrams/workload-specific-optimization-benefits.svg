@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Workload-Specific Optimization Benefits</text>
+  
+  <!-- Heat Map Framework -->
+  <rect x="150" y="100" width="500" height="300" fill="white" stroke="#333333" stroke-width="2" />
+  
+  <!-- Column Headers -->
+  <text x="250" y="85" font-family="Arial" font-size="14" text-anchor="middle">Sparsity</text>
+  <text x="375" y="85" font-family="Arial" font-size="14" text-anchor="middle">Mixed Precision</text>
+  <text x="500" y="85" font-family="Arial" font-size="14" text-anchor="middle">PE Clustering</text>
+  <text x="625" y="85" font-family="Arial" font-size="14" text-anchor="middle">Tech Scaling</text>
+  
+  <!-- Row Headers -->
+  <text x="130" y="150" font-family="Arial" font-size="14" text-anchor="end">CNN Layers</text>
+  <text x="130" y="250" font-family="Arial" font-size="14" text-anchor="end">Transformer</text>
+  <text x="130" y="260" font-family="Arial" font-size="14" text-anchor="end">Operations</text>
+  <text x="130" y="350" font-family="Arial" font-size="14" text-anchor="end">Mixed</text>
+  <text x="130" y="365" font-family="Arial" font-size="14" text-anchor="end">Workloads</text>
+  
+  <!-- Horizontal Grid Lines -->
+  <line x1="150" y1="200" x2="650" y2="200" stroke="#cccccc" stroke-width="1" />
+  <line x1="150" y1="300" x2="650" y2="300" stroke="#cccccc" stroke-width="1" />
+  
+  <!-- Vertical Grid Lines -->
+  <line x1="275" y1="100" x2="275" y2="400" stroke="#cccccc" stroke-width="1" />
+  <line x1="400" y1="100" x2="400" y2="400" stroke="#cccccc" stroke-width="1" />
+  <line x1="525" y1="100" x2="525" y2="400" stroke="#cccccc" stroke-width="1" />
+  
+  <!-- CNN Layers -->
+  <!-- Sparsity -->
+  <rect x="150" y="100" width="125" height="100" fill="#FF0000" fill-opacity="0.9" />
+  <text x="212.5" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.9</text>
+  
+  <!-- Mixed Precision -->
+  <rect x="275" y="100" width="125" height="100" fill="#FF0000" fill-opacity="0.6" />
+  <text x="337.5" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.6</text>
+  
+  <!-- PE Clustering -->
+  <rect x="400" y="100" width="125" height="100" fill="#FF0000" fill-opacity="0.5" />
+  <text x="462.5" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.5</text>
+  
+  <!-- Tech Scaling -->
+  <rect x="525" y="100" width="125" height="100" fill="#FF0000" fill-opacity="0.7" />
+  <text x="587.5" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.7</text>
+  
+  <!-- Transformer Operations -->
+  <!-- Sparsity -->
+  <rect x="150" y="200" width="125" height="100" fill="#FF0000" fill-opacity="0.5" />
+  <text x="212.5" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.5</text>
+  
+  <!-- Mixed Precision -->
+  <rect x="275" y="200" width="125" height="100" fill="#FF0000" fill-opacity="0.9" />
+  <text x="337.5" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.9</text>
+  
+  <!-- PE Clustering -->
+  <rect x="400" y="200" width="125" height="100" fill="#FF0000" fill-opacity="0.4" />
+  <text x="462.5" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.4</text>
+  
+  <!-- Tech Scaling -->
+  <rect x="525" y="200" width="125" height="100" fill="#FF0000" fill-opacity="0.7" />
+  <text x="587.5" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.7</text>
+  
+  <!-- Mixed Workloads -->
+  <!-- Sparsity -->
+  <rect x="150" y="300" width="125" height="100" fill="#FF0000" fill-opacity="0.7" />
+  <text x="212.5" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.7</text>
+  
+  <!-- Mixed Precision -->
+  <rect x="275" y="300" width="125" height="100" fill="#FF0000" fill-opacity="0.7" />
+  <text x="337.5" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.7</text>
+  
+  <!-- PE Clustering -->
+  <rect x="400" y="300" width="125" height="100" fill="#FF0000" fill-opacity="0.6" />
+  <text x="462.5" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.6</text>
+  
+  <!-- Tech Scaling -->
+  <rect x="525" y="300" width="125" height="100" fill="#FF0000" fill-opacity="0.7" />
+  <text x="587.5" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">0.7</text>
+  
+  <!-- Heat Map Scale -->
+  <rect x="150" y="420" width="500" height="25" fill="url(#gradient)" />
+  <text x="150" y="460" font-family="Arial" font-size="12" text-anchor="middle">0.0</text>
+  <text x="250" y="460" font-family="Arial" font-size="12" text-anchor="middle">0.2</text>
+  <text x="350" y="460" font-family="Arial" font-size="12" text-anchor="middle">0.4</text>
+  <text x="450" y="460" font-family="Arial" font-size="12" text-anchor="middle">0.6</text>
+  <text x="550" y="460" font-family="Arial" font-size="12" text-anchor="middle">0.8</text>
+  <text x="650" y="460" font-family="Arial" font-size="12" text-anchor="middle">1.0</text>
+  
+  <text x="400" y="480" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Relative Benefit</text>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF0000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Notes -->
+  <text x="150" y="50" font-family="Arial" font-size="12" text-anchor="start" font-style="italic">Higher values (darker red) indicate greater relative benefit from the optimization</text>
+</svg>
