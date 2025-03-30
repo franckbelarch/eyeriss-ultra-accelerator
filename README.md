@@ -18,6 +18,7 @@ Eyeriss Ultra is a next-generation neural network accelerator design that achiev
 - [`verification/`](verification/): Verification methodology and test cases
 - [`results/`](results/): Performance analysis and visualizations
 - [`docs/`](docs/): Detailed technical documentation
+- [License](#license)
 
 ## Getting Started
 
@@ -44,3 +45,14 @@ Eyeriss Ultra achieves a **6.4× improvement in energy efficiency** and **4.2× 
 ## Documentation
 
 For detailed information, see the [architecture overview](docs/architecture_overview.md) and [verification methodology](docs/verification_methodology.md).
+
+## Diagrams
+
+For detailed architectural diagrams, see the [Diagrams Overview](diagrams/diagrams.md) page.
+
+## License
+
+The contents of this repository are available for **viewing purposes**. If you'd like to download, reuse, modify, or redistribute any part of the code or diagrams, please reach out for permission.
+
+For inquiries or to discuss potential contributions, please contact me at francknbkg@gmail.com.
+Thank you
