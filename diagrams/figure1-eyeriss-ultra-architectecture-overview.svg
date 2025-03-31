@@ -24,31 +24,43 @@
   <text x="110" y="400" font-family="Arial" font-size="12" text-anchor="middle">Mixed-Precision</text>
   
   <!-- PE Array -->
-  <rect x="190" y="250" width="560" height="190" fill="#fff2cc" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <rect x="190" y="250" width="560" height="200" fill="#fff2cc" stroke="#333" stroke-width="2" rx="5" ry="5" />
   <text x="470" y="275" font-family="Arial" font-size="18" text-anchor="middle">PE Array (16×16) Organized in 4×4 Clusters</text>
   
   <!-- Draw PE Clusters -->
   <g id="pe-clusters">
     <!-- First row of clusters -->
-    <rect x="210" y="290" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
-    <rect x="340" y="290" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
-    <rect x="470" y="290" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
-    <rect x="600" y="290" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="210" y="285" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="340" y="285" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="470" y="285" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="600" y="285" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
     
     <!-- Second row of clusters -->
-    <rect x="210" y="360" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
-    <rect x="340" y="360" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
-    <rect x="470" y="360" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
-    <rect x="600" y="360" width="120" height="60" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="210" y="325" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="340" y="325" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="470" y="325" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="600" y="325" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    
+    <!-- Third row of clusters -->
+    <rect x="210" y="365" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="340" y="365" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="470" y="365" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="600" y="365" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    
+    <!-- Fourth row of clusters -->
+    <rect x="210" y="405" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="340" y="405" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="470" y="405" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
+    <rect x="600" y="405" width="120" height="35" fill="#ffd580" stroke="#333" stroke-width="1" />
   </g>
   
   <!-- Cluster Buffer Layer -->
-  <rect x="190" y="460" width="560" height="60" fill="#d9d9ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
-  <text x="470" y="495" font-family="Arial" font-size="16" text-anchor="middle">Cluster Buffers (64KB SRAM per cluster)</text>
+  <rect x="190" y="465" width="560" height="60" fill="#d9d9ff" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="470" y="500" font-family="Arial" font-size="16" text-anchor="middle">Cluster Buffers (64KB SRAM per cluster)</text>
   
   <!-- Network-on-Chip -->
-  <rect x="190" y="530" width="560" height="40" fill="#ffb3b3" stroke="#333" stroke-width="2" rx="5" ry="5" />
-  <text x="470" y="555" font-family="Arial" font-size="16" text-anchor="middle">Network-on-Chip for Data Distribution</text>
+  <rect x="190" y="535" width="560" height="40" fill="#ffb3b3" stroke="#333" stroke-width="2" rx="5" ry="5" />
+  <text x="470" y="560" font-family="Arial" font-size="16" text-anchor="middle">Network-on-Chip for Data Distribution</text>
   
   <!-- Arrows -->
   <defs>
@@ -60,8 +72,8 @@
   <!-- Vertical Data Flow Arrows -->
   <line x1="400" y1="130" x2="400" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
   <line x1="400" y1="230" x2="400" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
-  <line x1="400" y1="440" x2="400" y2="460" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
-  <line x1="400" y1="520" x2="400" y2="530" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="450" x2="400" y2="465" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="525" x2="400" y2="535" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
   
   <!-- Horizontal Control Flow Arrows -->
   <line x1="170" y1="320" x2="190" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />

@@ -43,7 +43,10 @@ Processing element design has evolved to support different workloads and optimiz
 
 ### 3.1 Overview
 
-Eyeriss Ultra builds upon the original Eyeriss architecture's row-stationary dataflow while incorporating several key enhancements. Figure 1 illustrates the high-level architecture of Eyeriss Ultra, consisting of a 16×16 array of processing elements (PEs) organized into clusters, a hierarchical memory system, and specialized control logic for sparsity and mixed precision.
+Eyeriss Ultra builds upon the original Eyeriss architecture's row-stationary dataflow while incorporating several key enhancements. **Figure 1** illustrates the high-level architecture of Eyeriss Ultra, consisting of a 16×16 array of processing elements (PEs) organized into clusters, a hierarchical memory system, and specialized control logic for sparsity and mixed precision.
+
+
+![Figure 1: Eyeriss Ultra Architecture Overview](../diagrams/figure1-eyeriss-ultra-architecture-overview.svg)
 
 ### 3.2 Memory Hierarchy
 
@@ -58,7 +61,7 @@ The memory hierarchy is designed to maximize data reuse while supporting efficie
 
 ### 3.3 Processing Element Clusters
 
-Eyeriss Ultra organizes PEs into clusters of 4 PEs each, allowing weight sharing among PEs within a cluster. This clustering reduces the storage requirements for weights and improves energy efficiency. As shown in Figure 2, each cluster includes:
+Eyeriss Ultra organizes PEs into clusters of 4 PEs each, allowing weight sharing among PEs within a cluster. This clustering reduces the storage requirements for weights and improves energy efficiency. As shown in **Figure 2**, each cluster includes:
 
 - Shared weight buffer
 - Local activation registers
@@ -66,6 +69,8 @@ Eyeriss Ultra organizes PEs into clusters of 4 PEs each, allowing weight sharing
 - Zero-detection logic for sparsity
 
 The PE clusters support both temporal and spatial mapping, enabling flexible execution of diverse neural network operations.
+
+![Figure 2: PE Cluster Organization](../diagrams/figure2-pe-cluster-organization.svg)
 
 ### 3.4 Mixed-Precision Support
 
@@ -75,7 +80,10 @@ Each PE in Eyeriss Ultra supports multiple precision formats:
 - **INT4**: Low-precision 4-bit operations with 4× higher throughput
 - **FP16**: 16-bit floating-point operations for training and higher precision requirements
 
-A precision dispatcher determines the appropriate precision for each operation based on workload requirements. Figure 3 illustrates the mixed-precision arithmetic unit, which can be configured for different precision modes.
+A precision dispatcher determines the appropriate precision for each operation based on workload requirements. **Figure 3** illustrates the mixed-precision arithmetic unit, which can be configured for different precision modes.
+
+
+![Figure 3: Mixed-Precision Arithmetic Unit](../diagrams/figure3-mixed-precision-arithmetic-unit.svg)
 
 ### 3.5 Sparsity Exploitation
 
@@ -86,19 +94,23 @@ Eyeriss Ultra includes hardware mechanisms to exploit sparsity in both weights a
 3. **Sparse Encoding**: Compressed format for storing sparse data
 4. **Dynamic Scheduling**: Load balancing to handle workload imbalance due to sparsity
 
-As shown in Figure 4, the combination of these techniques significantly reduces unnecessary computations and memory accesses.
+As shown in **Figure 4**, the combination of these techniques significantly reduces unnecessary computations and memory accesses.
+
+![Figure 4: Sparsity Exploitation Mechanism](../diagrams/figure4-sparsity-exploitation-mechanism.svg)
 
 ## 4. Simulation Methodology
 
 ### 4.1 Simulation Framework
 
-To evaluate Eyeriss Ultra, we developed a custom simulation framework that extends the capabilities of Timeloop [2]. Figure 5 illustrates the simulation workflow, which includes:
+To evaluate Eyeriss Ultra, we developed a custom simulation framework that extends the capabilities of Timeloop [2]. **Figure 5** illustrates the simulation workflow, which includes:
 
 1. **Architecture Specification**: YAML description of the Eyeriss Ultra architecture
 2. **Workload Definition**: Neural network layer specifications
 3. **Mapping Exploration**: Search for efficient spatial and temporal mappings
 4. **Post-Processing**: Advanced modeling of sparsity, mixed precision, and PE clustering
 5. **Analysis**: Energy, performance, and area evaluation
+
+![Figure 5: Simulation Framework Workflow](../diagrams/figure5-simulation-framework.svg)
 
 ### 4.2 Modeling Advanced Features
 
@@ -150,28 +162,39 @@ We evaluate Eyeriss Ultra on a diverse set of neural network operations:
 
 ### 5.1 Overall Performance and Efficiency
 
-Figure 6 shows the energy efficiency and performance of Eyeriss Ultra compared to the baseline Eyeriss architecture across various workloads. On average, Eyeriss Ultra achieves 6.4× improvement in energy efficiency and 4.2× improvement in performance. The energy-delay product (EDP) improves by 27.3× on average, with the highest improvement (32.5×) for CNN layers with significant sparsity.
+**Figure 6** shows the energy efficiency and performance of Eyeriss Ultra compared to the baseline Eyeriss architecture across various workloads. On average, Eyeriss Ultra achieves 6.4× improvement in energy efficiency and 4.2× improvement in performance. The energy-delay product (EDP) improves by 27.3× on average, with the highest improvement (32.5×) for CNN layers with significant sparsity.
+
+![Figure 6: Energy Efficiency and Performance Comparison](../diagrams/figure6-energy-efficiency-performance-comparison.svg)
 
 ### 5.2 Contribution of Optimizations
 
-Figure 7 illustrates the relative contribution of each optimization to the overall improvement:
+**Figure 7** illustrates the relative contribution of each optimization to the overall improvement:
 
 - **Sparsity Exploitation**: 42% of energy savings, 51% of latency improvement
 - **Mixed Precision**: 23% of energy savings, 0% of latency improvement (affects energy only)
 - **PE Clustering**: 14% of energy savings, 24% of latency improvement
 - **Technology Scaling**: 21% of energy savings, 25% of latency improvement
 
+
+![Figure 7: Contribution of Optimizations](../diagrams/figure7-contribution-of-optimizations.svg)
+
 ### 5.3 Detailed Analysis by Workload
 
-Figure 8 presents a detailed breakdown of energy consumption by component for different workloads. For CNN layers, the energy savings are most significant in the compute units (8.2×) and register files (7.1×), while global buffer energy reduces by 4.8×. For transformer operations, the energy savings are most significant in the global buffer (7.5×) due to the reduction in memory accesses from sparsity and mixed precision.
+**Figure 8** presents a detailed breakdown of energy consumption by component for different workloads. For CNN layers, the energy savings are most significant in the compute units (8.2×) and register files (7.1×), while global buffer energy reduces by 4.8×. For transformer operations, the energy savings are most significant in the global buffer (7.5×) due to the reduction in memory accesses from sparsity and mixed precision.
+
+
+![Figure 8: Energy Breakdown by Component](../diagrams/figure8-energy-breakdown-component.svg)
 
 ### 5.4 Comparison with Other Architectures
 
-Table 1 compares Eyeriss Ultra with other state-of-the-art accelerators, including Eyeriss, Simba, and TPU, across multiple metrics: throughput, energy efficiency, flexibility, and area efficiency. Eyeriss Ultra demonstrates superior energy efficiency across all workloads while maintaining flexibility.
+The [Architecture Comparison file](../docs/architecture_comparison.md) compares Eyeriss Ultra with other state-of-the-art accelerators, including Eyeriss, Simba, and TPU, across multiple metrics: throughput, energy efficiency, flexibility, and area efficiency. Eyeriss Ultra demonstrates superior energy efficiency across all workloads while maintaining flexibility.
 
 ### 5.5 Scalability Analysis
 
-Figure 9 shows how Eyeriss Ultra's performance and efficiency scale with PE array size, from 8×8 to 32×32. The results indicate that the optimizations in Eyeriss Ultra provide benefits across different array sizes, with the most significant improvements for larger arrays where data movement dominates energy consumption.
+**Figure 9** shows how Eyeriss Ultra's performance and efficiency scale with PE array size, from 8×8 to 32×32. The results indicate that the optimizations in Eyeriss Ultra provide benefits across different array sizes, with the most significant improvements for larger arrays where data movement dominates energy consumption.
+
+
+![Figure 9: Scalability Analysis](../diagrams/figure9-scalability-analysis.svg)
 
 ## 6. Conclusion and Future Work
 
