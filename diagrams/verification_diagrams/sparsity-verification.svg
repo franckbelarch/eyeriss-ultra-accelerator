@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f7fa" rx="10" ry="10" />
+  <rect x="50" y="30" width="700" height="540" fill="#ffffff" stroke="#2c3e50" stroke-width="2" rx="8" ry="8" />
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">SPARSITY VERIFICATION</text>
+  
+  <!-- Top Row -->
+  <rect x="100" y="90" width="280" height="70" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="240" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Sparsity Pattern</text>
+  <text x="240" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Generator</text>
+  
+  <rect x="420" y="90" width="280" height="70" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="560" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Statistical Test</text>
+  <text x="560" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Generation</text>
+  
+  <!-- Connection from top row to middle -->
+  <line x1="240" y1="160" x2="240" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="560" y1="160" x2="560" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="240" y1="175" x2="400" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="560" y1="175" x2="400" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="400" y1="175" x2="400" y2="190" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,195 395,185 405,185" fill="#2c3e50" />
+  
+  <!-- Sparsity Scenarios -->
+  <rect x="120" y="195" width="560" height="105" fill="#f39c12" fill-opacity="0.2" stroke="#f39c12" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">SPARSITY SCENARIOS</text>
+  <text x="150" y="245" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Variable sparsity levels (0-90%)</text>
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Weight sparsity patterns</text>
+  <text x="150" y="295" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Activation sparsity patterns</text>
+  <text x="450" y="245" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Combined weight+activation sparsity</text>
+  <text x="450" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Different distribution patterns</text>
+  
+  <!-- Arrow to Verification Focus -->
+  <line x1="400" y1="300" x2="400" y2="315" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,320 395,310 405,310" fill="#2c3e50" />
+  
+  <!-- Verification Focus -->
+  <rect x="120" y="320" width="560" height="105" fill="#2ecc71" fill-opacity="0.2" stroke="#2ecc71" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="345" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">VERIFICATION FOCUS</text>
+  <text x="150" y="370" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Zero detection correctness</text>
+  <text x="150" y="395" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Computation skipping effectiveness</text>
+  <text x="150" y="420" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Compressed storage format validation</text>
+  <text x="450" y="370" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Pipeline behavior with sparse inputs</text>
+  <text x="450" y="395" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Control flow verification</text>
+  
+  <!-- Arrow to Metrics Validation -->
+  <line x1="400" y1="425" x2="400" y2="440" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,445 395,435 405,435" fill="#2c3e50" />
+  
+  <!-- Metrics Validation -->
+  <rect x="120" y="445" width="560" height="105" fill="#9b59b6" fill-opacity="0.2" stroke="#9b59b6" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">METRICS VALIDATION</text>
+  <text x="150" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Actual vs. theoretical energy savings</text>
+  <text x="150" y="520" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Computation reduction validation</text>
+  <text x="450" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Memory traffic reduction measurement</text>
+  <text x="450" y="520" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Performance scaling with sparsity</text>
+</svg>

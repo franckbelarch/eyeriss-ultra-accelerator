@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f5f7fa" rx="10" ry="10" />
+  <rect x="50" y="30" width="700" height="440" fill="#ffffff" stroke="#2c3e50" stroke-width="2" rx="8" ry="8" />
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">VERIFICATION HIERARCHY</text>
+  
+  <!-- System Level Block -->
+  <rect x="100" y="90" width="600" height="100" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">SYSTEM-LEVEL VERIFICATION</text>
+  <text x="150" y="145" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• End-to-end workload verification</text>
+  <text x="150" y="170" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Full network execution</text>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• System-level performance validation</text>
+  <text x="400" y="170" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Integration with software stack</text>
+  
+  <!-- Arrow to Block Level -->
+  <line x1="400" y1="190" x2="400" y2="215" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,220 395,210 405,210" fill="#2c3e50" />
+  
+  <!-- Block Level -->
+  <rect x="100" y="220" width="600" height="100" fill="#2ecc71" fill-opacity="0.2" stroke="#2ecc71" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">BLOCK-LEVEL VERIFICATION</text>
+  <text x="150" y="275" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Memory hierarchy integration</text>
+  <text x="150" y="300" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• PE cluster verification</text>
+  <text x="400" y="275" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Control logic validation</text>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Dataflow verification</text>
+  
+  <!-- Arrow to Unit Level -->
+  <line x1="400" y1="320" x2="400" y2="345" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,350 395,340 405,340" fill="#2c3e50" />
+  
+  <!-- Unit Level -->
+  <rect x="100" y="350" width="600" height="100" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="375" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">UNIT-LEVEL VERIFICATION</text>
+  <text x="150" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Mixed-precision computation unit</text>
+  <text x="150" y="430" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Sparsity handling logic</text>
+  <text x="400" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Memory components</text>
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• PE design verification</text>
+</svg>

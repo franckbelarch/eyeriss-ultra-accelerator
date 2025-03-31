@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f7fa" rx="10" ry="10" />
+  <rect x="50" y="30" width="700" height="550" fill="#ffffff" stroke="#2c3e50" stroke-width="2" rx="8" ry="8" />
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">MIXED-PRECISION VERIFICATION</text>
+  
+  <!-- Top Row -->
+  <rect x="100" y="90" width="280" height="70" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="240" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Precision Format</text>
+  <text x="240" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Reference Models</text>
+  
+  <rect x="420" y="90" width="280" height="70" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="560" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Precision-Specific</text>
+  <text x="560" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Test Generation</text>
+  
+  <!-- Connection from top row to middle -->
+  <line x1="240" y1="160" x2="240" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="560" y1="160" x2="560" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="240" y1="175" x2="400" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="560" y1="175" x2="400" y2="175" stroke="#2c3e50" stroke-width="2" />
+  <line x1="400" y1="175" x2="400" y2="190" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,195 395,185 405,185" fill="#2c3e50" />
+  
+  <!-- Test Scenarios -->
+  <rect x="120" y="195" width="560" height="105" fill="#2ecc71" fill-opacity="0.2" stroke="#2ecc71" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">TEST SCENARIOS</text>
+  <text x="150" y="245" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Individual precision mode validation</text>
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Precision transition testing</text>
+  <text x="150" y="295" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Format conversion validation</text>
+  <text x="450" y="245" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Accumulation across precisions</text>
+  <text x="450" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Mixed I/O precision combinations</text>
+  
+  <!-- Arrow to Corner Cases -->
+  <line x1="400" y1="300" x2="400" y2="315" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,320 395,310 405,310" fill="#2c3e50" />
+  
+  <!-- Corner Cases -->
+  <rect x="120" y="320" width="560" height="105" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="345" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">CORNER CASES</text>
+  <text x="150" y="370" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Overflow/underflow handling</text>
+  <text x="150" y="395" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Rounding behaviors</text>
+  <text x="150" y="420" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Special values (NaN, infinity)</text>
+  <text x="450" y="370" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Edge cases in conversion</text>
+  <text x="450" y="395" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Accumulation chain precision effects</text>
+  
+  <!-- Arrow to Coverage Metrics -->
+  <line x1="400" y1="425" x2="400" y2="440" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,445 395,435 405,435" fill="#2c3e50" />
+  
+  <!-- Coverage Metrics -->
+  <rect x="120" y="445" width="560" height="105" fill="#9b59b6" fill-opacity="0.2" stroke="#9b59b6" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">COVERAGE METRICS</text>
+  <text x="150" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• All precision modes tested</text>
+  <text x="150" y="520" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• All conversion paths verified</text>
+  <text x="450" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Corner cases coverage tracked</text>
+  <text x="450" y="520" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">• Dynamic mode switching verified</text>
+</svg>

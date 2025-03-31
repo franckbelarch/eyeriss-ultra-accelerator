@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f7fa" rx="10" ry="10" />
+  <rect x="50" y="30" width="700" height="540" fill="#ffffff" stroke="#2c3e50" stroke-width="2" rx="8" ry="8" />
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">VERIFICATION METRICS AND COVERAGE</text>
+  
+  <!-- Column Headers -->
+  <rect x="100" y="90" width="180" height="50" fill="#3498db" fill-opacity="0.4" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="190" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">FEATURE COVERAGE</text>
+  
+  <rect x="310" y="90" width="180" height="50" fill="#3498db" fill-opacity="0.4" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">TEST CASES EXECUTED</text>
+  
+  <rect x="520" y="90" width="180" height="50" fill="#3498db" fill-opacity="0.4" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="610" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">COVERAGE ACHIEVED</text>
+  
+  <!-- Mixed Precision Row -->
+  <text x="190" y="170" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Mixed Precision</text>
+  <text x="190" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">Computation</text>
+  
+  <line x1="280" y1="180" x2="310" y2="180" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="310,180 300,175 300,185" fill="#2c3e50" />
+  
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">348 test cases</text>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">executed</text>
+  
+  <line x1="490" y1="180" x2="520" y2="180" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="520,180 510,175 510,185" fill="#2c3e50" />
+  
+  <text x="610" y="170" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% precision modes</text>
+  <text x="610" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">97% conversion paths</text>
+  <text x="610" y="210" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% corner cases</text>
+  
+  <!-- Horizontal Line -->
+  <line x1="100" y1="230" x2="700" y2="230" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Sparsity Row -->
+  <text x="190" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Sparsity</text>
+  <text x="190" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">Support</text>
+  
+  <line x1="280" y1="270" x2="310" y2="270" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="310,270 300,265 300,275" fill="#2c3e50" />
+  
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">425 test cases</text>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">executed</text>
+  
+  <line x1="490" y1="270" x2="520" y2="270" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="520,270 510,265 510,275" fill="#2c3e50" />
+  
+  <text x="610" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% sparsity levels</text>
+  <text x="610" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">98% pattern coverage</text>
+  <text x="610" y="300" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% mechanism validation</text>
+  
+  <!-- Horizontal Line -->
+  <line x1="100" y1="320" x2="700" y2="320" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- PE Clustering Row -->
+  <text x="190" y="350" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">PE Clustering</text>
+  <text x="190" y="370" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">Organization</text>
+  
+  <line x1="280" y1="360" x2="310" y2="360" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="310,360 300,355 300,365" fill="#2c3e50" />
+  
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">156 test cases</text>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">executed</text>
+  
+  <line x1="490" y1="360" x2="520" y2="360" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="520,360 510,355 510,365" fill="#2c3e50" />
+  
+  <text x="610" y="350" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% communication paths</text>
+  <text x="610" y="370" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% sharing scenarios</text>
+  <text x="610" y="390" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">95% corner cases</text>
+  
+  <!-- Horizontal Line -->
+  <line x1="100" y1="410" x2="700" y2="410" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Memory Hierarchy Row -->
+  <text x="190" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Memory Hierarchy</text>
+  <text x="190" y="460" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">Integration</text>
+  
+  <line x1="280" y1="450" x2="310" y2="450" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="310,450 300,445 300,455" fill="#2c3e50" />
+  
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">275 test cases</text>
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">executed</text>
+  
+  <line x1="490" y1="450" x2="520" y2="450" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="520,450 510,445 510,455" fill="#2c3e50" />
+  
+  <text x="610" y="440" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% buffer types</text>
+  <text x="610" y="460" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">98% access patterns</text>
+  <text x="610" y="480" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% bandwidth validation</text>
+  
+  <!-- Horizontal Line -->
+  <line x1="100" y1="500" x2="700" y2="500" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Overall System Row -->
+  <text x="190" y="530" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Overall System</text>
+  <text x="190" y="550" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">Verification</text>
+  
+  <line x1="280" y1="540" x2="310" y2="540" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="310,540 300,535 300,545" fill="#2c3e50" />
+  
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">187 workloads</text>
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">simulated</text>
+  
+  <line x1="490" y1="540" x2="520" y2="540" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="520,540 510,535 510,545" fill="#2c3e50" />
+  
+  <text x="610" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% layer types</text>
+  <text x="610" y="550" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">95% workload variations</text>
+  <text x="610" y="570" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2c3e50">100% performance metrics</text>
+</svg>

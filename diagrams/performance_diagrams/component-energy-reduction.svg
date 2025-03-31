@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <!-- Background -->
+  <rect width="700" height="450" fill="#f9f9f9" rx="10" ry="10"/>
+  <text x="350" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Component-Level Energy Reduction</text>
+  
+  <!-- Axes -->
+  <line x1="100" y1="350" x2="600" y2="350" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="350" x2="100" y2="80" stroke="#333" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="95" y="350" font-family="Arial" font-size="12" text-anchor="end">0x</text>
+  <text x="95" y="320" font-family="Arial" font-size="12" text-anchor="end">1x</text>
+  <text x="95" y="290" font-family="Arial" font-size="12" text-anchor="end">2x</text>
+  <text x="95" y="260" font-family="Arial" font-size="12" text-anchor="end">3x</text>
+  <text x="95" y="230" font-family="Arial" font-size="12" text-anchor="end">4x</text>
+  <text x="95" y="200" font-family="Arial" font-size="12" text-anchor="end">5x</text>
+  <text x="95" y="170" font-family="Arial" font-size="12" text-anchor="end">6x</text>
+  <text x="95" y="140" font-family="Arial" font-size="12" text-anchor="end">7x</text>
+  <text x="95" y="110" font-family="Arial" font-size="12" text-anchor="end">8x</text>
+  <text x="95" y="80" font-family="Arial" font-size="12" text-anchor="end">9x</text>
+  
+  <!-- Bars -->
+  <rect x="125" y="110" width="60" height="240" fill="#ff9966"/>
+  <rect x="205" y="140" width="60" height="210" fill="#66cc99"/>
+  <rect x="285" y="200" width="60" height="150" fill="#6699cc"/>
+  <rect x="365" y="230" width="60" height="120" fill="#9966cc"/>
+  <rect x="445" y="260" width="60" height="90" fill="#cc6699"/>
+  <rect x="525" y="170" width="60" height="180" fill="#66cccc"/>
+  
+  <!-- Bar labels (values) -->
+  <text x="155" y="100" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">8.2x</text>
+  <text x="235" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">7.1x</text>
+  <text x="315" y="190" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">4.8x</text>
+  <text x="395" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">4.5x</text>
+  <text x="475" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">3.2x</text>
+  <text x="555" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">6.4x</text>
+  
+  <!-- X-axis labels -->
+  <text x="155" y="375" font-family="Arial" font-size="12" text-anchor="middle">Compute</text>
+  <text x="155" y="390" font-family="Arial" font-size="12" text-anchor="middle">Units</text>
+  
+  <text x="235" y="375" font-family="Arial" font-size="12" text-anchor="middle">Register</text>
+  <text x="235" y="390" font-family="Arial" font-size="12" text-anchor="middle">Files</text>
+  
+  <text x="315" y="375" font-family="Arial" font-size="12" text-anchor="middle">Global</text>
+  <text x="315" y="390" font-family="Arial" font-size="12" text-anchor="middle">Buffer</text>
+  
+  <text x="395" y="375" font-family="Arial" font-size="12" text-anchor="middle">Network</text>
+  
+  <text x="475" y="375" font-family="Arial" font-size="12" text-anchor="middle">DRAM</text>
+  <text x="475" y="390" font-family="Arial" font-size="12" text-anchor="middle">Access</text>
+  
+  <text x="555" y="375" font-family="Arial" font-size="12" text-anchor="middle">Overall</text>
+</svg>

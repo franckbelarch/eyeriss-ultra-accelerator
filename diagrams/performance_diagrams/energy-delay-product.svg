@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <!-- Background -->
+  <rect width="700" height="450" fill="#f9f9f9" rx="10" ry="10"/>
+  <text x="350" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Energy-Delay Product Improvement</text>
+  
+  <!-- Axes -->
+  <line x1="150" y1="350" x2="550" y2="350" stroke="#333" stroke-width="2"/>
+  <line x1="150" y1="350" x2="150" y2="80" stroke="#333" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="145" y="350" font-family="Arial" font-size="12" text-anchor="end">0x</text>
+  <text x="145" y="320" font-family="Arial" font-size="12" text-anchor="end">5x</text>
+  <text x="145" y="290" font-family="Arial" font-size="12" text-anchor="end">10x</text>
+  <text x="145" y="260" font-family="Arial" font-size="12" text-anchor="end">15x</text>
+  <text x="145" y="230" font-family="Arial" font-size="12" text-anchor="end">20x</text>
+  <text x="145" y="200" font-family="Arial" font-size="12" text-anchor="end">25x</text>
+  <text x="145" y="170" font-family="Arial" font-size="12" text-anchor="end">30x</text>
+  
+  <!-- Bars -->
+  <rect x="180" y="347" width="80" height="3" fill="#6699cc"/>
+  <rect x="290" y="320" width="80" height="30" fill="#66cc99"/>
+  <rect x="400" y="260" width="80" height="90" fill="#ff9966"/>
+  <rect x="510" y="170" width="80" height="180" fill="#9966cc"/>
+  
+  <!-- Bar labels (values) -->
+  <text x="220" y="337" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">1.0x</text>
+  <text x="330" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">2.1x</text>
+  <text x="440" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">9.0x</text>
+  <text x="550" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">27.3x</text>
+  
+  <!-- X-axis labels -->
+  <text x="220" y="375" font-family="Arial" font-size="12" text-anchor="middle">Eyeriss</text>
+  <text x="220" y="390" font-family="Arial" font-size="12" text-anchor="middle">Base</text>
+  
+  <text x="330" y="375" font-family="Arial" font-size="12" text-anchor="middle">Energy</text>
+  <text x="330" y="390" font-family="Arial" font-size="12" text-anchor="middle">Only</text>
+  
+  <text x="440" y="375" font-family="Arial" font-size="12" text-anchor="middle">Perf.</text>
+  <text x="440" y="390" font-family="Arial" font-size="12" text-anchor="middle">Only</text>
+  
+  <text x="550" y="375" font-family="Arial" font-size="12" text-anchor="middle">EDP</text>
+  
+  <!-- Legend -->
+  <text x="350" y="420" font-family="Arial" font-size="12" text-anchor="middle">Energy Only = Energy Improvement (6.4×)</text>
+  <text x="350" y="435" font-family="Arial" font-size="12" text-anchor="middle">Perf. Only = (Energy × Performance) = 6.4× × 1.4× = 9.0×</text>
+  <text x="350" y="450" font-family="Arial" font-size="12" text-anchor="middle">EDP = Energy × Delay² = 6.4× × 4.2²× = 27.3×</text>
+</svg>

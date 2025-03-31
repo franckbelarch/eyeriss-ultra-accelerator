@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f9f9f9" rx="10" ry="10"/>
+  <text x="300" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Overall Energy Efficiency</text>
+  
+  <!-- Axes -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="300" x2="100" y2="100" stroke="#333" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="95" y="300" font-family="Arial" font-size="12" text-anchor="end">0x</text>
+  <text x="95" y="260" font-family="Arial" font-size="12" text-anchor="end">1x</text>
+  <text x="95" y="220" font-family="Arial" font-size="12" text-anchor="end">2x</text>
+  <text x="95" y="180" font-family="Arial" font-size="12" text-anchor="end">3x</text>
+  <text x="95" y="140" font-family="Arial" font-size="12" text-anchor="end">4x</text>
+  <text x="95" y="100" font-family="Arial" font-size="12" text-anchor="end">5x</text>
+  <text x="95" y="60" font-family="Arial" font-size="12" text-anchor="end">6x</text>
+  
+  <!-- Bars -->
+  <rect x="130" y="260" width="60" height="40" fill="#6699cc"/>
+  <rect x="230" y="218" width="60" height="82" fill="#66cc99"/>
+  <rect x="330" y="140" width="60" height="160" fill="#ff9966"/>
+  <rect x="430" y="60" width="60" height="240" fill="#9966cc"/>
+  
+  <!-- Bar labels (values) -->
+  <text x="160" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">1.0x</text>
+  <text x="260" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">2.1x</text>
+  <text x="360" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">4.3x</text>
+  <text x="460" y="150" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">6.4x</text>
+  
+  <!-- X-axis labels -->
+  <text x="160" y="320" font-family="Arial" font-size="12" text-anchor="middle">Eyeriss</text>
+  <text x="160" y="335" font-family="Arial" font-size="12" text-anchor="middle">BASE</text>
+  
+  <text x="260" y="320" font-family="Arial" font-size="12" text-anchor="middle">+Mixed</text>
+  <text x="260" y="335" font-family="Arial" font-size="12" text-anchor="middle">Precision</text>
+  
+  <text x="360" y="320" font-family="Arial" font-size="12" text-anchor="middle">+Sparsity</text>
+  <text x="360" y="335" font-family="Arial" font-size="12" text-anchor="middle">Support</text>
+  
+  <text x="460" y="320" font-family="Arial" font-size="12" text-anchor="middle">+Tech Scaling</text>
+  <text x="460" y="335" font-family="Arial" font-size="12" text-anchor="middle">& Clustering</text>
+  
+  <!-- Legend -->
+  <text x="300" y="370" font-family="Arial" font-size="12" text-anchor="middle">MP = Mixed Precision (23%), SP = Sparsity Support (42%), TS = Tech Scaling & PE Clustering (35%)</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f5f7fa" rx="10" ry="10" />
+  <rect x="50" y="30" width="700" height="460" fill="#ffffff" stroke="#2c3e50" stroke-width="2" rx="8" ry="8" />
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">VERIFICATION METHODOLOGY FLOWCHART</text>
+  
+  <!-- Top Row -->
+  <rect x="100" y="90" width="160" height="70" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="180" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Architecture</text>
+  <text x="180" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Specification</text>
+  
+  <rect x="320" y="90" width="160" height="70" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Verification</text>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Requirements</text>
+  
+  <rect x="540" y="90" width="160" height="70" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" rx="5" ry="5" />
+  <text x="620" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Reference</text>
+  <text x="620" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Models</text>
+  
+  <!-- Arrows between top row -->
+  <line x1="260" y1="125" x2="315" y2="125" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="320,125 310,120 310,130" fill="#2c3e50" />
+  
+  <line x1="480" y1="125" x2="535" y2="125" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="540,125 530,120 530,130" fill="#2c3e50" />
+  
+  <!-- Vertical arrow from Reference Models -->
+  <line x1="620" y1="160" x2="620" y2="205" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="620,210 615,200 625,200" fill="#2c3e50" />
+  
+  <!-- Middle Row -->
+  <rect x="100" y="210" width="160" height="70" fill="#2ecc71" fill-opacity="0.2" stroke="#2ecc71" stroke-width="2" rx="5" ry="5" />
+  <text x="180" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Coverage</text>
+  <text x="180" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Analysis</text>
+  
+  <rect x="320" y="210" width="160" height="70" fill="#2ecc71" fill-opacity="0.2" stroke="#2ecc71" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Test</text>
+  <text x="400" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Generation</text>
+  
+  <rect x="540" y="210" width="160" height="70" fill="#2ecc71" fill-opacity="0.2" stroke="#2ecc71" stroke-width="2" rx="5" ry="5" />
+  <text x="620" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Simulation</text>
+  <text x="620" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Framework</text>
+  
+  <!-- Arrows between middle row -->
+  <line x1="260" y1="245" x2="315" y2="245" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="260,245 270,240 270,250" fill="#2c3e50" />
+  
+  <line x1="480" y1="245" x2="535" y2="245" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="480,245 490,240 490,250" fill="#2c3e50" />
+  
+  <!-- arrow from Coverage Analysis to center box -->
+  <line x1="180" y1="280" x2="180" y2="310" stroke="#2c3e50" stroke-width="2" />
+  <line x1="180" y1="310" x2="320" y2="310" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="325,310 315,305 315,315" fill="#2c3e50" />
+  
+  <!-- Center box -->
+  <rect x="175" y="320" width="450" height="60" fill="#9b59b6" fill-opacity="0.2" stroke="#9b59b6" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">COVERAGE-DRIVEN VERIFICATION</text>
+  
+  <!-- Vertical arrow from center box -->
+  <line x1="400" y1="380" x2="400" y2="410" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="400,415 395,405 405,405" fill="#2c3e50" />
+  
+  <!-- Bottom Row -->
+  <rect x="100" y="415" width="160" height="70" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="5" ry="5" />
+  <text x="180" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Performance</text>
+  <text x="180" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Validation</text>
+  
+  <rect x="320" y="415" width="160" height="70" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Bug</text>
+  <text x="400" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Tracking</text>
+  
+  <rect x="540" y="415" width="160" height="70" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="5" ry="5" />
+  <text x="620" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Verification</text>
+  <text x="620" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Reporting</text>
+  
+  <!-- Arrows between bottom row -->
+  <line x1="260" y1="450" x2="315" y2="450" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="260,450 270,445 270,455" fill="#2c3e50" />
+  
+  <line x1="480" y1="450" x2="535" y2="450" stroke="#2c3e50" stroke-width="2" />
+  <polygon points="480,450 490,445 490,455" fill="#2c3e50" />
+</svg>

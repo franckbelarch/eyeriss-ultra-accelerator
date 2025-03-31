@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480">
+  <!-- Background -->
+  <rect width="700" height="480" fill="white" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Architecture Comparison</text>
+  
+  <!-- Table Headers -->
+  <rect x="50" y="70" width="180" height="40" fill="#e0e0e0" rx="5" ry="5"/>
+  <rect x="230" y="70" width="100" height="40" fill="#e0e0e0" rx="5" ry="5"/>
+  <rect x="330" y="70" width="100" height="40" fill="#e0e0e0" rx="5" ry="5"/>
+  <rect x="430" y="70" width="100" height="40" fill="#e0e0e0" rx="5" ry="5"/>
+  <rect x="530" y="70" width="120" height="40" fill="#9966cc" rx="5" ry="5"/>
+  
+  <text x="140" y="95" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Metric</text>
+  <text x="280" y="95" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Eyeriss</text>
+  <text x="380" y="95" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Simba</text>
+  <text x="480" y="95" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">TPU</text>
+  <text x="590" y="95" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">Eyeriss Ultra</text>
+  
+  <!-- Energy Efficiency Row -->
+  <rect x="50" y="110" width="180" height="60" fill="#f5f5f5" rx="5" ry="5"/>
+  <rect x="230" y="110" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="330" y="110" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="430" y="110" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="530" y="110" width="120" height="60" fill="#f0e6ff" rx="5" ry="5"/>
+  
+  <text x="140" y="140" font-family="Arial" font-size="14" text-anchor="middle">Energy Efficiency</text>
+  <text x="140" y="160" font-family="Arial" font-size="14" text-anchor="middle">(TOPS/W)</text>
+  
+  <!-- Bar for Eyeriss -->
+  <rect x="240" y="140" width="20" height="15" fill="#6699cc"/>
+  <text x="280" y="150" font-family="Arial" font-size="16" text-anchor="middle">0.8</text>
+  
+  <!-- Bar for Simba -->
+  <rect x="340" y="140" width="30" height="15" fill="#66cc99"/>
+  <text x="380" y="150" font-family="Arial" font-size="16" text-anchor="middle">1.2</text>
+  
+  <!-- Bar for TPU -->
+  <rect x="440" y="140" width="35" height="15" fill="#ff9966"/>
+  <text x="480" y="150" font-family="Arial" font-size="16" text-anchor="middle">1.4</text>
+  
+  <!-- Bar for Eyeriss Ultra -->
+  <rect x="540" y="140" width="90" height="15" fill="#9966cc"/>
+  <text x="590" y="150" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">5.1</text>
+  
+  <!-- Performance Row -->
+  <rect x="50" y="170" width="180" height="60" fill="#f5f5f5" rx="5" ry="5"/>
+  <rect x="230" y="170" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="330" y="170" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="430" y="170" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="530" y="170" width="120" height="60" fill="#f0e6ff" rx="5" ry="5"/>
+  
+  <text x="140" y="200" font-family="Arial" font-size="14" text-anchor="middle">Performance</text>
+  <text x="140" y="220" font-family="Arial" font-size="14" text-anchor="middle">(TOPS)</text>
+  
+  <!-- Bar for Eyeriss -->
+  <rect x="240" y="200" width="12" height="15" fill="#6699cc"/>
+  <text x="280" y="210" font-family="Arial" font-size="16" text-anchor="middle">0.5</text>
+  
+  <!-- Bar for Simba -->
+  <rect x="340" y="200" width="25" height="15" fill="#66cc99"/>
+  <text x="380" y="210" font-family="Arial" font-size="16" text-anchor="middle">1.0</text>
+  
+  <!-- Bar for TPU -->
+  <rect x="440" y="200" width="57" height="15" fill="#ff9966"/>
+  <text x="480" y="210" font-family="Arial" font-size="16" text-anchor="middle">2.3</text>
+  
+  <!-- Bar for Eyeriss Ultra -->
+  <rect x="540" y="200" width="52" height="15" fill="#9966cc"/>
+  <text x="590" y="210" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">2.1</text>
+  
+  <!-- Area Efficiency Row -->
+  <rect x="50" y="230" width="180" height="60" fill="#f5f5f5" rx="5" ry="5"/>
+  <rect x="230" y="230" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="330" y="230" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="430" y="230" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="530" y="230" width="120" height="60" fill="#f0e6ff" rx="5" ry="5"/>
+  
+  <text x="140" y="260" font-family="Arial" font-size="14" text-anchor="middle">Area Efficiency</text>
+  <text x="140" y="280" font-family="Arial" font-size="14" text-anchor="middle">(TOPS/mm²)</text>
+  
+  <!-- Bar for Eyeriss -->
+  <rect x="240" y="260" width="15" height="15" fill="#6699cc"/>
+  <text x="280" y="270" font-family="Arial" font-size="16" text-anchor="middle">0.3</text>
+  
+  <!-- Bar for Simba -->
+  <rect x="340" y="260" width="30" height="15" fill="#66cc99"/>
+  <text x="380" y="270" font-family="Arial" font-size="16" text-anchor="middle">0.6</text>
+  
+  <!-- Bar for TPU -->
+  <rect x="440" y="260" width="40" height="15" fill="#ff9966"/>
+  <text x="480" y="270" font-family="Arial" font-size="16" text-anchor="middle">0.8</text>
+  
+  <!-- Bar for Eyeriss Ultra -->
+  <rect x="540" y="260" width="60" height="15" fill="#9966cc"/>
+  <text x="590" y="270" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">1.2</text>
+  
+  <!-- Flexibility Row -->
+  <rect x="50" y="290" width="180" height="60" fill="#f5f5f5" rx="5" ry="5"/>
+  <rect x="230" y="290" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="330" y="290" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="430" y="290" width="100" height="60" fill="white" rx="5" ry="5"/>
+  <rect x="530" y="290" width="120" height="60" fill="#f0e6ff" rx="5" ry="5"/>
+  
+  <text x="140" y="320" font-family="Arial" font-size="14" text-anchor="middle">Flexibility</text>
+  <text x="140" y="340" font-family="Arial" font-size="14" text-anchor="middle">(Qualitative)</text>
+  
+  <text x="280" y="325" font-family="Arial" font-size="16" text-anchor="middle">High</text>
+  <text x="380" y="325" font-family="Arial" font-size="16" text-anchor="middle">Medium</text>
+  <text x="480" y="325" font-family="Arial" font-size="16" text-anchor="middle">Low</text>
+  <text x="590" y="325" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">High</text>
+  
+  <!-- Visual star ratings for flexibility -->
+  <text x="280" y="340" font-family="Arial" font-size="16" text-anchor="middle">★★★★☆</text>
+  <text x="380" y="340" font-family="Arial" font-size="16" text-anchor="middle">★★★☆☆</text>
+  <text x="480" y="340" font-family="Arial" font-size="16" text-anchor="middle">★★☆☆☆</text>
+  <text x="590" y="340" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">★★★★★</text>
+  
+  <!-- Key Insight Box - Improved positioning and text -->
+  <rect x="100" y="370" width="500" height="80" fill="#f0f0f0" rx="10" ry="10" stroke="#9966cc" stroke-width="3"/>
+  
+  <!-- Single line of key insight text -->
+  <text x="350" y="415" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Eyeriss Ultra achieves 6.4× better energy efficiency</text>
+</svg>
