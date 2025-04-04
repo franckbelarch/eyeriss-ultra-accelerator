@@ -44,7 +44,7 @@ Eyeriss Ultra achieves a **6.4× improvement in energy efficiency** and **4.2× 
 
 ## Documentation
 
-For detailed information, see the [architecture overview](docs/architecture_overview.md) and [verification methodology](docs/verification_methodology.md).
+For detailed information, see the [architecture overview](documentation/architecture_overview.md) and [verification methodology](documentation/verification_methodology.md).
 
 ## Diagrams
 
